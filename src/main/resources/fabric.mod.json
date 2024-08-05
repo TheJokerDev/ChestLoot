@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "chestloot",
+  "version": "${version}",
+  "name": "ChestLoot",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/chestloot/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "com.j0keer.chestloot.Chestloot"
+    ]
+  },
+  "mixins": [
+    "chestloot.mixins.json",
+    {
+      "config": "chestloot.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
