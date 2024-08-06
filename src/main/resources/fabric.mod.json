@@ -4,22 +4,21 @@
   "version": "${version}",
   "name": "ChestLoot",
   "description": "",
-  "authors": [],
-  "contact": {},
+  "authors": ["J0keer"],
+  "contact": {
+    "github": "https://github.com/TheJokerDev",
+    "discord": "thejokerdev"
+  },
   "license": "All-Rights-Reserved",
   "icon": "assets/chestloot/icon.png",
   "environment": "server",
   "entrypoints": {
     "main": [
-      "com.j0keer.chestloot.Chestloot"
+      "com.j0keer.chestloot.ChestLoot"
     ]
   },
   "mixins": [
-    "chestloot.mixins.json",
-    {
-      "config": "chestloot.client.mixins.json",
-      "environment": "client"
-    }
+    "chestloot.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
